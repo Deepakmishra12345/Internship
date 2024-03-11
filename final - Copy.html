@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icons/logo.svg" type="image/svg+xml">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
+
+        <title>Final Payment</title>
+    </head>
+    <body>
+        <header class="header">
+            <logo-container>
+                <img src="Assets\icons\Logo.svg" alt="EasySet24">
+            </logo-container>
+            <details-container style="display: flex; flex-direction: row; gap: 10px;">
+                <img src="Assets\icons\Country.svg" alt="England">
+                <img src="Assets\icons\help.svg" alt="Help">
+                <user-profile style="display: flex; flex-direction: row; gap: 10px;">
+                    <img src="Assets\icons\user-avatar.svg" alt="Avatar">
+                    <user-name style="display: flex; flex-direction: column;">
+                        <strong>Your Account</strong>
+                        <a>Anna Carolina</a>
+                    </user-name>
+                </user-profile>
+            </details-container>
+        </header>
+        <main>
+            <section style="background-color: white; border-radius: 4px; display: flex; flex-direction: row; padding: 50px 35px 20px 35px; margin: 30px 90px 30px 90px; align-items:first baseline;">
+                <summary-container class="summary-container">
+                    <h2 style="background-color: white;">Information You Need To Pay Attention.</h2>
+                    <a style="background-color: white;">Passengers are divided according to age categories.</a>
+                    <a style="background-color: white;">Please Check Categories</a>
+                    <img src="Assets\images\Ticket.png">
+                    <h2 style="background-color: white;">Your Trip Summary</h2>
+                    <p style="background-color: white;">Your flight take off from ARN Gate 23A , you Enter through C Entrance. In FCO Airport in Rome You will stay 3h &45m then Exit through Gate D14 . Final Destination will be SABIHA Airport and You can Exit Through L Door .</p>
+                </summary-container>
+                <payment-container class="payment-container">
+                    <h2 style="background-color: white;">Payment Methods And Information</h2>
+                    <h4 style="background-color: white;">Price Details</h4>
+                    <div class="passenger-numbers">
+                        <div-adult-passengers style="background-color: white; flex-direction: row;">
+                            <price style="color: #4C9839; background-color: white;">$ 87</price>
+                            <a style="background-color: white;">2 Adults</a>
+                        </div-adult-passengers>
+                        <div-children-passengers style="background-color: white; flex-direction: row;">
+                            <price style="color: #4C9839; background-color: white;">$ 24</price>
+                            <a style="background-color: white;">3 Children</a>
+                        </div-children-passengers>
+                        <div-infant-passengers style="background-color: white; flex-direction: row;">
+                            <price style="color: #4C9839; background-color: white;">$ 12</price>
+                            <a style="background-color: white;">1 Infants</a>
+                        </div-infant-passengers>
+                    </div>
+                    <div class="ticket-price">
+                        <strong>Total</strong>
+                        <strong style="color: #4C9839;">$ 157</strong>
+                    </div>
+                    <div-payment-method>
+                        <input type="radio" id="myCheckbox" class="primary-radiobutton">
+                        <label for="myCheckbox"><strong>Booking For Work</strong></label>
+                        <strong>Payment Method</strong>
+                        <select id="id_select2_example" style="width: 40px;">
+                            <option data-img_src="Assets\icons\Paypal_submark.svg"></option>
+                            
+                            
+                        </select>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+                        <script type="text/javascript">
+                        function custom_template(obj){
+                                var data = $(obj.element).data();
+                                var text = $(obj.element).text();
+                                if(data && data['img_src']){
+                                    img_src = data['img_src'];
+                                    template = $("<div><img src=\"" + img_src + "\" style=\"width:100%;height:10px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
+                                    return template;
+                                }
+                            }
+                        var options = {
+                            'templateSelection': custom_template,
+                            'templateResult': custom_template,
+                        }
+                        $('#id_select2_example').select2(options);
+                        $('.select2-container--default .select2-selection--single').css({'height': '30px'});
+
+                        </script>
+                    </div-payment-method>
+                    <div-passenger-contect-details style="display: flex; flex-direction: row; align-items: start; justify-content: space-between;">
+                        <user-first-name style="display: flex; flex-direction: column;">
+                            <a>First Name</a>
+                            <input type="text" id="fname" name="fname">
+                        </user-first-name>
+                        <user-last-name style="display: flex; flex-direction: column;">
+                            <a>Last Name</a>
+                            <input type="text" id="lname" name="lname">
+                        </user-last-name>
+                        <user-contact-info style="display: flex; flex-direction: column;">
+                            <a>Phone Number</a>
+                            <input type="text" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}">
+                        </user-contact-info>
+                    </div-passenger-contect-details>
+                    <div-card-details style="display: flex; flex-direction: row; align-items: start; justify-content: space-between;">
+                        <card-number style="display: flex; flex-direction: column;">
+                            <a>Card Number</a>
+                            <input type="text" id="card-num" name="card-num">
+                        </card-number>
+                        <card-cvc style="display: flex; flex-direction: column;">
+                            <a>CVC</a>
+                            <input type="text" id="cvc" name="cvc">
+                        </card-cvc>
+                        <card-exp-date style="display: flex; flex-direction: column;">
+                            <a>EXP Date</a>
+                            <input type="text" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}">
+                        </card-exp-date>
+                    </div-card-details>
+                    <h2>Cancellation Policy</h2>
+                    <a>Get A Full Refund If You Cancel By Jan 23 (PDT)</a>
+                    <submit-buttons style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                        <confirm-button class="primary-button">Confirm And Pay</confirm-button>
+                        <save-button class="secondary-button">Save If You Like It</save-button>
+                    </submit-buttons>
+                </payment-container>
+            </section>
+            
+        </main>
+        <footer class="footer" style="padding-bottom: 0%;">
+            <app-links style="display: flex; flex-direction: row; justify-content: space-between; padding-left: 90px; padding-right: 90px; padding-bottom: 40px">
+                <text style="display: flex; flex-direction: column; align-items: start; padding: 7px">
+                    <strong style="color: #07689F;">Go Further With The EasySet24 App</strong>
+                    <a>Enjoy Savings On Chosen Hotels And Flights When You Book Through The EasySet24 Website.</a>
+                    <a>Additionally, Earn One Key Cash For Every Booking Made Through The App.</a>
+                    <a>Secured By Europe GTP</a>
+                </text>
+                <download-links style="display: flex; flex-direction: column;">
+                    <a href="https://www.apple.com/app-store/" target="_blank">
+                        <img src="Assets\icons\app-store.svg">
+                    </a>
+                    <a href="https://play.google.com/store" target="_blank">
+                        <img src="Assets\icons\google-play.svg">
+                    </a>
+                </download-links>
+            </app-links>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <a href="#" >Our Story</a>
+                    <a href="#" >Work With Us</a>
+                    <a href="#" >Press & Media</a>
+                    <a href="#" >Privacy & Security</a>
+                </div>
+                <div class="footer-column">
+                    <h3>We Offer</h3>
+                    <a href="#" >Trip Sponsorship</a>
+                    <a href="#" >Last Minute Flights</a>
+                    <a href="#" >Best Deals</a>
+                    <a href="#" >AI-Driven Search</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Headquarters</h3>
+                    <a href="#" >England</a>
+                    <a href="#" >France</a>
+                    <a href="#" >Canada</a>
+                    <a href="#" >Iceland</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Travel Blogs</h3>
+                    <a href="#">Bali Travel Guide</a>
+                    <a href="#">Sri Travel Guide</a>
+                    <a href="#">Peru Travel Guide</a>
+                    <a href="#">Swiss Travel Guide</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Activities</h3>
+                    <a href="#">Tour Leading</a>
+                    <a href="#">Cruising & Sailing</a>
+                    <a href="#">Camping</a>
+                    <a href="#">Kayaking</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <a href="#">Report Error</a>
+                    <a href="#">Ask Online</a>
+                    <a href="#">Travel Insurance</a>
+                </div>
+            </div>
+            <div class="footer-bottoms" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="payment-links">
+                    <a href="#">
+                        <img src="Assets\icons\visa.svg">
+                    </a>
+                    <a href="#">
+                        <img src="Assets\icons\american-express.svg">
+                    </a>
+                    <a href="#">
+                        <img src="Assets\icons\mastercard.svg">
+                    </a>
+                    <a href="#">
+                        <img src="Assets\icons\paypal.svg">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><img src="Assets\icons\linkedin_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\telegram_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\twitter_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\facebook_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\instagram_blue.svg"></a>
+                </div>
+                <div class="email-subscription">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="contact-info" style="background: #d9d9d9;">
+                <p style="background: #d9d9d9;">© Copyright EasySet24</p>
+                <p style="background: #d9d9d9;">EasySet24@Gmail.com</p>
+                <p style="background: #d9d9d9;">"EasySet24: Seamless Journeys, Unrivalled Travel Wisdom!"</p>
+                <p style="background: #d9d9d9;">123 Oxford Street, London</p>
+                <p style="background: #d9d9d9;">+44 20 7123 4567</p>
+            </div>
+        </footer>
+    </body>
+</html>
