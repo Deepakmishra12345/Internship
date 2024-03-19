@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="icon" href="Assets/icons/logo.svg" type="image/svg+xml">
-    </head>
-    <body>
-        <header></header>
-        <main>
-            <container-left>
-                <hotel-details style="background-color: white; border-radius: 4px; display: flex; flex-direction: crow;">
-                    <hotel-gallery style="display: flex; flex-direction: column; gap:10px;">
-                        <img src="Assets\images\hotel_images\hotel_1.png" alt="Image 1" style="border-radius: 4px;">
-                        <img src="Assets\images\hotel_images\hotel_2.png" alt="Image 2" style="border-radius: 4px;">
-                        <img src="Assets\images\hotel_images\hotel_3.png" alt="Image 3" style="border-radius: 4px;">
-                        <img src="Assets\images\hotel_images\hotel_4.png" alt="Image 4" style="border-radius: 4px;">
-                    </hotel-gallery>
-                    <hotel-info style="padding-left: 25px;">
-                        <h2>First Hotel G</h2>
-                        <a>Modern Hotel At Gotenberg Central Station</a>
-                        <h4><img src="Assets\icons\Landmark Sign.svg">Location Information</h4>
-                        <ul>
-                            <li>0 m to City Centre</li>
-                            <li>24 km to Landvetter Airport</li>
-                            <li>2,5 km to Liseberg Amusment Park</li>
-                            <li>0 m to Gothenburg Central Station</li>
-                        </ul>
-                        
-                    </hotel-info>
-                </hotel-details>
-                <booking-details></booking-details>
-                <room-details></room-details>
-                <payment-information>
-                    <price-summary></price-summary>
-                    <cancellation-policy></cancellation-policy>
-                    <payment-methods></payment-methods>
-                </payment-information>
-            </container-left>
-            <container-right>
-                <user-information></user-information>
-                <additional-services></additional-services>
-                <card-information></card-information>
-            </container-right>
-        </main>
-        <footer></footer>
-    </body>
-</html>
+
+<head>
+  <title>Hotel Booking Confirmation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" href="Assets/icons/logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <header>
+    </header>
+  <main>
+    <container-left>
+      <hotel-details style="background-color: white; border-radius: 4px; display: flex; flex-direction: row;">
+        <hotel-gallery style="display: flex; flex-direction: column; gap:10px;">
+          <img src="Assets/images/hotel_images/hotel_1.png" alt="Image 1" style="border-radius: 4px; width: 150px; height: 150px;">
+          <img src="Assets/images/hotel_images/hotel_2.png" alt="Image 2" style="border-radius: 4px; width: 150px; height: 150px;">
+          <img src="Assets/images/hotel_images/hotel_3.png" alt="Image 3" style="border-radius: 4px; width: 150px; height: 150px;">
+          <img src="Assets/images/hotel_images/hotel_4.png" alt="Image 4" style="border-radius: 4px; width: 150px; height: 150px;">
+        </hotel-gallery>
+        <hotel-info style="padding-left: 25px;">
+          <h2>First Hotel G</h2>
+          <a>Modern Hotel At Gotenberg Central Station</a>
+          <h4><img src="Assets/icons/Landmark Sign.svg" alt="Location Icon"> Location Information</h4>
+          <ul>
+            <li>0 m to City Centre</li>
+            <li>24 km to Landvetter Airport</li>
+            <li>2.5 km to Liseberg Amusement Park</li>
+            <li>0 m to Gothenburg Central Station</li>
+          </ul>
+        </hotel-info>
+      </hotel-details>
+
+      <booking-details>
+        <h3>Your Booking Details</h3><br><br>
+        <pre>
+          Check-in                 Check-out
+          2 August 2023          6 August 2023
+        </pre>
+
+        <ul>
+          <li>You Will Stay 4 Nights</li>
+          <li>You Selected 2 Rooms For:</li>
+          <li>2 Adults</li>
+          <li>3 Children (12, 7 and 5 Years Old)</li>
+          <li>0 Infant</li>
+        </ul>
+      </booking-details>
+      <room-details>
+        <h3>The Room: Superior Twin Room</h3>
+        <ul>
+          <li>Room Capacity: 2 Adults</li>
+          <li>Bed Type: 1 King Bed</li>
+          <li>Amenities: Air Conditioning, Wi-Fi, Flat Screen TV, Mini Bar</li>
+          <li>View: City View</li>
+        </ul>
+      </room-details>
+      <payment-information>
+        <price-summary></price-summary>
+        <cancellation-policy>
+          <h3>Cancellation Policy</h3>
+          <p>This reservation can be cancelled free of charge until 24 hours before check-in. 
+          If cancelled later, you will be charged the full price of your stay.</p>
+        </cancellation-policy>
+        <payment-methods></payment-methods>
+      </payment-information>
+    </container-left>
+    <container-right>
+      <user-information>
+        <h3>Guest Information</h3>
+        <ul>
+          <li>**Name:** Anna Cor</li>
+        </ul>
+        <br>
+        <button>Add Another Guest</button>
+      </user-information>
+      <additional-
