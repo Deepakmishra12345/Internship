@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles_service.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icons/logo.svg" type="image/svg+xml">
+
+        <title>Flights</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="navbar">
+                <a href="flights.html" class="logo-container">
+                    <img src="Assets\icons\logo.svg" class="logo-svg">
+                </a>
+                
+                <div class="search-container">
+                    <input type="search" class="search-box" placeholder="Search..." style="background-color: white;">
+                </div>
+                <div class="help-container">
+                    <a class="help-btn"><img src="Assets\icons\England.svg"></a>
+                    <a class="help-btn"><img src="Assets\icons\Dollar.svg"></a>
+                    <a class="help-btn"><img src="Assets\icons\help.svg"></a>
+                    <a class="help-btn" href="flight-favourites.html"><img src="Assets\icons\Favourite.svg"></a>
+                    <a class="help-btn" href="customer_service.html"><img src="Assets\icons\Phone.svg"></a>
+                    <div>
+                        <img src="Assets\images\profile.png">
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <strong style="color: #043E5F;">Your Account</strong>
+                        <a style="color: #07689f;">Anna Carinna</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <div class="chips-container">
+                <a href="404.html" target="_blank" style="text-decoration: none;" class="chip">Trip</a>
+                <a href="404.html" target="_blank" style="text-decoration: none;" class="chip">Deals</a>
+                <a href="index_hotel.html" target="_blank" style="text-decoration: none;" class="chip">Hotel</a>
+                <a class="chip" style="background-color: #07689f; color:white; border: none;">Flight</a>
+                <a href="404.html" target="_blank" style="text-decoration: none;" class="chip">Apartment</a>
+                <a href="404.html" target="_blank" style="text-decoration: none;" class="chip">Camper</a>
+            </div>
+
+        </header>
+        <banner style="width: 100%;">
+            <img src="Assets\images\flight-banner.png" style="max-width: 100%;">
+        </banner>
+        <flight-news style="display: flex; flex-direction: row; justify-content: center;">
+            <div style="padding-left: -120px; padding-right: 60px; padding-top: 20px; padding-bottom: 20px;">
+                <h2>Let's Travel together</h2>
+                <a>Discover the latest offers and news and start planning your next trip with us.</a>
+            </div>
+            <a style="padding-left: 60px; padding-right: 60px; padding-top: 20px; padding-bottom: 20px;">
+                <a href="deals.html" class="secondary-button">See All ></a>
+            </a>
+        </flight-news>
+        <div>
+            <img style="max-width: 100%;" src="Assets\images\world-map.png">
+        </div>
+        <main>
+            <trip-packages style="padding-top: 20px; padding-bottom: 20px;">
+                <div>
+                    <h2>Fall Into Travel</h2>
+                    <a style="color: #07689F">Review Affordable EasySet 24 Trip Packages</a>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <div style="padding-right: 205px;">
+                        <a>Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, We’ve got the travel tools to get you to your destination.</a>
+                    </div>
+                    <a>
+                        <a href="#" class="secondary-button" style="width: 185px;">See All</a>
+                    </a>
+                </div>
+            </trip-packages>
+            <backpacking style="display:flex; flex-direction:row;">
+
+                <backpacking-text style="display:flex; flex-direction: column; align-items: start; height: 100%; padding-right: 30px;">
+                    <main-text style="display:flex; flex-direction:row; padding-bottom: 20px;">
+                        <price style="display:flex; flex-direction: column; background: #07689F; color: white; border-radius: 4px;">
+                            <a style="background: #07689F; color: white; border-radius: 4px; padding-left: 8px; padding-right: 8px;">From</a>
+                            <a style="background: #07689F; color: white; border-radius: 4px; padding-left: 8px; padding-right: 8px;">$700</a>
+                        </price>
+                        <h2 style="padding-left: 15px;">Backpacking South Of Asia...</h2>
+                    </main-text>
+                    <p>
+                        Traveling is a unique experience as it's the best way to unplug from the pushes and pulls of daily life. <br><br>
+                        Relaxing through an organized trip , helps us to forget about our problems, frustrations, and fears at home. <br><br>                        
+                        During our journey, we experience life in different ways. We explore new places, cultures, cuisines, traditions, and ways of living.
+                    </p>
+                    <a style="margin-bottom: 0px; padding-top: 50px;">
+                        <a href="#" class="secondary-button" style="width: 100%; margin-bottom: 0px;">Book Flight</a>
+                    </a>
+                </backpacking-text>
+
+                <backpacking-cards style="display:flex; flex-direction: column; padding: 10px;">
+                    <row1 style="display:flex; flex-direction: row;">
+                        <img style="padding: 3px; border-radius: 18px;" src="Assets\images\backpackingAA.png">
+                        <img style="padding: 3px; border-radius: 18px;" src="Assets\images\backpackingAB.png">
+                    </row1>
+                    <row2 style="display:flex; flex-direction: row;">
+                        <img style="padding: 3px; border-radius: 18px;" src="Assets\images\backpackingBA.png">
+                        <img style="padding: 3px; border-radius: 18px;" src="Assets\images\backpackingBB.png">
+                    </row2>
+                </backpacking-cards>
+                
+            </backpacking>
+        </main>
+        <footer class="footer" style="padding-bottom: 0%;">
+            <app-links style="display: flex; flex-direction: row; justify-content: space-between; padding-left: 90px; padding-right: 90px; padding-bottom: 40px">
+                <text style="display: flex; flex-direction: column; align-items: start; padding: 7px">
+                    <strong style="color: #07689F;">Go Further With The EasySet24 App</strong>
+                    <a>Enjoy Savings On Chosen Hotels And Flights When You Book Through The EasySet24 Website.</a>
+                    <a>Additionally, Earn One Key Cash For Every Booking Made Through The App.</a>
+                    <a>Secured By Europe GTP</a>
+                </text>
+                <download-links style="display: flex; flex-direction: column;">
+                    <a href="https://www.apple.com/app-store/" target="_blank">
+                        <img src="Assets\icons\app-store.svg">
+                    </a>
+                    <a href="https://play.google.com/store" target="_blank">
+                        <img src="Assets\icons\google-play.svg">
+                    </a>
+                </download-links>
+            </app-links>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <a href="#" >Our Story</a>
+                    <a href="#" >Work With Us</a>
+                    <a href="#" >Press & Media</a>
+                    <a href="#" >Privacy & Security</a>
+                </div>
+                <div class="footer-column">
+                    <h3>We Offer</h3>
+                    <a href="#" >Trip Sponsorship</a>
+                    <a href="#" >Last Minute Flights</a>
+                    <a href="#" >Best Deals</a>
+                    <a href="#" >AI-Driven Search</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Headquarters</h3>
+                    <a href="#" >England</a>
+                    <a href="#" >France</a>
+                    <a href="#" >Canada</a>
+                    <a href="#" >Iceland</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Travel Blogs</h3>
+                    <a href="#">Bali Travel Guide</a>
+                    <a href="#">Sri Travel Guide</a>
+                    <a href="#">Peru Travel Guide</a>
+                    <a href="#">Swiss Travel Guide</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Activities</h3>
+                    <a href="#">Tour Leading</a>
+                    <a href="#">Cruising & Sailing</a>
+                    <a href="#">Camping</a>
+                    <a href="#">Kayaking</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <a href="#">Report Error</a>
+                    <a href="#">Ask Online</a>
+                    <a href="#">Travel Insurance</a>
+                </div>
+            </div>
+            <div class="footer-bottoms" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="payment-links">
+                    <a href="#">
+                        <img src="Assets\icons\visa.svg">
+                    </a>
+                    <a href="#">
+                        <img src="Assets\icons\american-express.svg">
+                    </a>
+                    <a href="#">
+                        <img src="Assets\icons\mastercard.svg">
+                    </a>
+                    <a href="#">
+                        <img src="Assets\icons\paypal.svg">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><img src="Assets\icons\linkedin_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\telegram_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\twitter_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\facebook_blue.svg"></a>
+                    <a href="#"><img src="Assets\icons\instagram_blue.svg"></a>
+                </div>
+                <div class="email-subscription">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p style="background: #d9d9d9;">© Copyright EasySet24</p>
+                <p style="background: #d9d9d9;">EasySet24@Gmail.com</p>
+                <p style="background: #d9d9d9;">"EasySet24: Seamless Journeys, Unrivalled Travel Wisdom!"</p>
+                <p style="background: #d9d9d9;">123 Oxford Street, London</p>
+                <p style="background: #d9d9d9;">+44 20 7123 4567</p>
+            </div>
+        </footer>
+    </body>
+</html>

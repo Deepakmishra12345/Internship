@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+* { border: 1px solid black; } 
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #a6a6a6;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+}
+
+.help-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+}
+
+.help-btn {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-container .search-box {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #a6a6a6;
+    font-family: "Poppins", sans-serif;
+}
+
+.auth-container .auth-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #07689f;
+    border: 2px solid #07689f;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container .auth-btn:hover {
+    background-color: #07689f;
+    color: white;
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chip {
+    padding: 10px 20px;
+    border-radius: 60px;
+    background-color: white;
+    border: 1px solid #a6a6a6;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+main {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.image-container {
+    background-image: url('Assets/images/Banner_homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 300px;
+    color: white;
+    padding: 20px 20px 20px 50px;
+    font-size: larger;
+}
+
+.radio-container {
+    display: flex;
+}
+
+.collage-container {
+    display: flex;
+    justify-content: center
+}
+
+.collage-container img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+.row-1 {
+    background-color: #f2f2f2;
+}
+
+.row-2 {
+    background-color: #e0e0e0;
+}
