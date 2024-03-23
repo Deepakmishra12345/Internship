@@ -1,13 +1,11 @@
-/* style2.css */
 
-/* Global Styles */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #f2f2f2;
 }
 
-/* Header Styles */
+
 .header {
   color: white;
   padding: 20px;
@@ -44,7 +42,7 @@ body {
   margin-right: 10px;
 }
 
-/* Content Styles */
+
 .content {
   text-align: center;
   padding: 50px 20px;
@@ -97,7 +95,7 @@ h1 {
   height: 609px;
 }
 
-/* Responsive Styles */
+
 @media only screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -129,7 +127,7 @@ h1 {
   }
 }
 
-/* Additional Responsive Styles */
+
 @media only screen and (max-width: 600px) {
   .content {
     padding: 30px 10px;
@@ -149,7 +147,6 @@ h1 {
   }
 }
 
-/* Footer Styles */
 .footer {
   padding: 50px 20px;
   text-align: center;
@@ -223,7 +220,7 @@ h1 {
   margin: 5px 0;
 }
 
-/* Responsive Footer Styles */
+
 @media only screen and (max-width: 768px) {
   .footer-column {
     flex-basis: 50%;
