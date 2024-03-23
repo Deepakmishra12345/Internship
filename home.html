@@ -32,7 +32,7 @@
                 <div>
                     <img src="Assets\images\profile.png">
                 </div>
-                <div style="display: flex; flex-direction: column; align-items: start;">
+                <div class="infom" style="display: flex; flex-direction: column; align-items: start;">
                     <strong style="color: #043E5F;">Your Account</strong>
                     <a style="color: #07689f;">Anna Carinna</a>
                 </div>
@@ -53,45 +53,45 @@
     <main class="main">
         <container-left>
             <hotel-details style="background-color: white; border-radius: 4px; display: flex; flex-direction: crow;">
-                <hotel-gallery style="display: flex; flex-direction: column; gap:10px;">
-                    <img src="Assets\images\hotel_images\hotel_1.png" alt="Image 1" style="border-radius: 4px;">
-                    <img src="Assets\images\hotel_images\hotel_2.png" alt="Image 2" style="border-radius: 4px;">
-                    <img src="Assets\images\hotel_images\hotel_3.png" alt="Image 3" style="border-radius: 4px;">
-                    <img src="Assets\images\hotel_images\hotel_4.png" alt="Image 4" style="border-radius: 4px;">
-                </hotel-gallery>
-                <hotel-info style="padding-left: 25px;" class="info">
-                    <div class="upper">
-                        <h2>First Hotel G</h2>
-                        <a>Modern Hotel At Gotenberg Central Station</a>
-                        <h4><img src="Assets\icons\Landmark Sign.svg">Location Information</h4>
-                        <ul>
-                            <li>0 m to City Centre</li>
-                            <li>24 km to Landvetter Airport</li>
-                            <li>2,5 km to Liseberg Amusment Park</li>
-                            <li>0 m to Gothenburg Central Station</li>
-                        </ul>
-                    </div>
+                <div class="hotel-container" style="display: flex;">
+                    <hotel-gallery style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="Assets\images\hotel_images\hotel_1.png" alt="Image 1" style="border-radius: 4px;">
+                        <img src="Assets\images\hotel_images\hotel_2.png" alt="Image 2" style="border-radius: 4px;">
+                        <img src="Assets\images\hotel_images\hotel_3.png" alt="Image 3" style="border-radius: 4px;">
+                        <img src="Assets\images\hotel_images\hotel_4.png" alt="Image 4" style="border-radius: 4px;">
+                    </hotel-gallery>
+                    <hotel-info style="flex: 1; padding-left: 25px;" class="info">
+                        <div class="upper">
+                            <h2>First Hotel G</h2>
+                            <a>Modern Hotel At Gotenberg Central Station</a>
+                            <h4><img src="Assets\icons\Landmark Sign.svg">Location Information</h4>
+                            <ul>
+                                <li>0 m to City Centre</li>
+                                <li>24 km to Landvetter Airport</li>
+                                <li>2,5 km to Liseberg Amusment Park</li>
+                                <li>0 m to Gothenburg Central Station</li>
+                            </ul>
+                        </div>
 
-
-                    <img src="Assets\icons\mug-hot-solid.svg" alt="" srcset=""
-                        style="width: 24px; height: 24px;">Breakfast Included <br>
-                    <img src="Assets\icons\wifi-solid.svg" alt="" srcset=""
-                        style="width: 24px; height: 24px; gap: 8px;">Free Wifi <br>
-                    <img src="Assets\icons\square-parking-solid.svg" alt="" srcset=""
-                        style="width: 24px; height: 24px;">Free Parking <br>
-                    <img src="Assets\icons\shield-cat-solid.svg" alt="" srcset=""
-                        style="width: 24px; height: 24px;">Pets are Welcome <br>
-                    <img src="Assets\icons\smoking.svg" alt="" srcset="" style="width: 24px; height: 24px;">no
-                    smoking<br>
-                    <img src="Assets\icons\entrance.svg" alt="" srcset="" style="width: 24px; height: 24px;">Free
-                    Entrance Exercise Centre<br>
-
-
-                </hotel-info>
-            </hotel-details>
+                        <img src="Assets\icons\mug-hot-solid.svg" alt="" srcset=""
+                            style="width: 24px; height: 24px;">Breakfast Included <br>
+                        <img src="Assets\icons\wifi-solid.svg" alt="" srcset=""
+                            style="width: 24px; height: 24px; gap: 8px;">Free Wifi <br>
+                        <img src="Assets\icons\square-parking-solid.svg" alt="" srcset=""
+                            style="width: 24px; height: 24px;">Free Parking <br>
+                        <img src="Assets\icons\shield-cat-solid.svg" alt="" srcset=""
+                            style="width: 24px; height: 24px;">Pets are Welcome <br>
+                        <img src="Assets\icons\smoking.svg" alt="" srcset="" style="width: 24px; height: 24px;">no
+                        smoking<br>
+                        <img src="Assets\icons\entrance.svg" alt="" srcset="" style="width: 24px; height: 24px;">Free
+                        Entrance Exercise Centre<br>
+                    </hotel-info>
+                </div>
+            </hotel-details><br><br>
             <booking-details>
                 <div class="booking">
                     <h2>Your Booking Deteiels</h2>
+
 
                     <div class="checking">
                         <div class="checkin">
@@ -147,7 +147,7 @@
                         <h2>Your Price Summary</h2>
                         <div class="price-details">
                             <p>Original Price</p>
-                            <p class="amount">$960 4 Nights</p>
+                            <p class="amount" >$960 4 Nights</p>
                         </div>
                         <div class="price-details">
                             <p>EasySet24 Loyalty Discount 4%</p>
@@ -162,7 +162,7 @@
                 <cancellation-policy>
                     <section class="cancellation-policy">
                         <h2>Cancellation Policy</h2>
-                        <p>Free Cancellation</p>
+                        <strong>Free Cancellation</strong>
                         <p>Cancel /Rebook No Later Than 24 Hours Before, Otherwise You Pay 80% Of The Cost.</p>
                     </section>
                 </cancellation-policy>
@@ -178,169 +178,262 @@
         <container-right>
             <user-information>
                 <div class="user">
-                    <div>
-                        <img src="Assets\images\profile.png">
-                    </div>
-                    <div style="display: flex; flex-direction: column; align-items: start;">
-                        <strong style="color: #043E5F;">Your Account</strong>
-                        <a style="color: #07689f;">Anna Carinna</a>
-                    </div>
+                    <div style="display: flex; align-items: center;">
 
-                    <h1>Who Are You Booking For?</h1>
-                    <p>Make Sure The Information That You Have Already Written In Your Profile Is Correct.</p>
+                        <div style="display: flex; align-items: center;">
 
-                </div>
+                            <img src="Assets/images/profile.png" alt="Profile Image" style="margin-right: 10px;">
+
+
+                            <div style="margin-right: 10px;">
+                                <strong style="color: #0a0a0a;">Anna Carinna</strong> <br>
+                                <a>easyset24@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <button
+                            style="margin-right: 10px; background-color: #043E5F; color: white; border: none; padding: 5px 10px; cursor: pointer; margin-left: 300px;">Check
+                            your Booking history</button>
+                    </div>
+                    <br>
+
+
+                    <div class="radio-container" style="display: flex; align-items: center;">
+                        <h3 style="margin-right: 10px;">Who Are You Booking For?</h3>
+                        <label style="margin-right: 10px; margin-left: 50px;">
+                            <input type="radio" name="bookingFor" value="mainGuest"> I am the main guest
+                        </label>
+                        <label>
+                            <input type="radio" name="bookingFor" value="someoneElse"> Booking is for someone else
+                        </label>
+                    </div> <br><br>
+
+                    <div class="information">
+                        <h3>Enter Your Information</h3>
+                        <p>Make Sure the Information that you Have already written in yoy Profile is Correct.</p>
+                    </div>
 
             </user-information>
+            <br>
             <additional-services>
                 <form id="booking-form" onsubmit="return validateForm()">
-                    <div class="form-group">
-                        <label for="fullName">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
+                    <h3>Full Name</h3>
+                    <div class="form-row" style="display: flex; justify-content: space-evenly;">
+                        <div class="form-group">
+
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" id="middleName" name="middleName" placeholder="Middle Name">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+                    <div class="form-row" style="display: flex;">
+                        <div class="form-group" style="width: 364px;">
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" id="email" name="email" placeholder="..........................">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number:</label> <br>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="764378888888">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="phoneNumber">Phone Number:</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number"
-                            required>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="assistance">
+                                <h3>If you need assistance:</h3>
+                            </label>
+
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="physicalDisability">Choose An Option Based On Physical Disability
-                            Accordingly:</label>
-                        <select id="physicalDisability" name="physicalDisability" required>
-                            <option value="">Select an option</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="physicalDisability">
+                                <p style="font-weight: 400;">Choose An Option Based On Physical Disability Accordingly
+                                </p>
+                            </label>
+
+                            <span class="error-message" id="disability-error"></span>
+                        </div>
+                        <div class="form-group region" style="display: flex;">
+
+                            <label for="region">Region/Country:</label> <br>
+                            <select id="region" name="region">
+                                <option value="">Select a region</option>
+                            </select>
+                            <br>
+
+
+                            <label for="choose an option">Choose an option</label>
+                            <br>
+                            <select id="option" name="choose an option">
+                                <option value="">choose an option</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group region">
-                        <label for="region">Region/Country:</label>
-                        <select id="region" name="region" required>
-                            <option value="">Select a region</option>
-                        </select>
-                    </div>
-                    <button type="submit">Book Now</button>
+
                 </form>
+                <br>
 
                 <script>
                     function validateForm() {
-                        var fullName = document.getElementById('fullName').value;
-                        var email = document.getElementById('email').value;
-                        var phoneNumber = document.getElementById('phoneNumber').value;
-                        var physicalDisability = document.getElementById('physicalDisability').value;
-                        var region = document.getElementById('region').value;
+                        var isValid = true;
 
-                        if (!fullName || !email || !phoneNumber || !physicalDisability || !region) {
-                            alert("All fields are required!");
-                            return false;
+                        // Validate Email
+                        var emailInput = document.getElementById("email");
+                        var emailError = document.getElementById("email-error");
+                        var email = emailInput.value.trim();
+                        if (email === "") {
+                            emailError.textContent = "Email is required";
+                            isValid = false;
+                        } else {
+                            emailError.textContent = "";
                         }
 
+                        // Validate Phone Number
+                        var phoneInput = document.getElementById("phoneNumber");
+                        var phoneError = document.getElementById("phone-error");
+                        var phone = phoneInput.value.trim();
+                        if (phone === "") {
+                            phoneError.textContent = "Phone number is required";
+                            isValid = false;
+                        } else {
+                            phoneError.textContent = "";
+                        }
 
+                        // Validate Physical Disability
+                        var disabilityInput = document.getElementById("physicalDisability");
+                        var disabilityError = document.getElementById("disability-error");
+                        var disability = disabilityInput.value.trim();
+                        if (disability === "") {
+                            disabilityError.textContent = "Please select an option";
+                            isValid = false;
+                        } else {
+                            disabilityError.textContent = "";
+                        }
 
-                        return true;
+                        // Validate Region/Country
+                        var regionInput = document.getElementById("region");
+                        var regionError = document.getElementById("region-error");
+                        var region = regionInput.value.trim();
+                        if (region === "") {
+                            regionError.textContent = "Please select a region";
+                            isValid = false;
+                        } else {
+                            regionError.textContent = "";
+                        }
+
+                        return isValid;
                     }
                 </script>
 
-                <p class="edit-profile">If You Need Assistance, <a href="#">Edit Profile</a></p>
 
-                <h1>Add To Your Stay</h1>
-                <div class="options-container">
-                    <h2>Flights</h2>
-                    <p>We will need a flight for your trip. Would you like us to find some options for you?</p>
+                <h3>Add To Your Stay</h3>
+                <div class="form-row">
                     <div class="form-group">
-                        <label for="findFlights">Find Flights</label>
-                        <input type="checkbox" id="findFlights" name="findFlights">
-                        <span class="checkmark"></span>
-                    </div>
-                    <h2>Taxi or Shuttle Ride</h2>
-                    <p>Avoid surprises and get from the airport to your accommodation without a hitch. Would you like to
-                        pre-book a taxi or shuttle ride?</p>
-                    <div class="form-group">
-                        <label for="bookTaxi">Book Taxi/Shuttle</label>
-                        <input type="checkbox" id="bookTaxi" name="bookTaxi">
-                        <span class="checkmark"></span>
-                    </div>
-                </div>
-                <button type="submit" disabled>Continue</button>
-                <p class="disclaimer">You can select both options or neither. Selecting a flight will display flight
-                    options. Selecting a taxi will add a taxi booking option to your confirmation.</p>
-
-                <h1>Special Requests</h1>
-                <p>(Optional) Can Be Made After Your Booking Is Complete!</p>
-                <form id="special-requests-form">
-                    <div class="form-group">
-                        <label for="roomsCloseTogether">Rooms Close Together</label>
-                        <input type="checkbox" id="roomsCloseTogether" name="roomsCloseTogether">
-                    </div>
-                    <div class="form-group">
-                        <label for="cribRequest">Cri crib (for infants aged 0-2 years old)</label>
-                        <input type="checkbox" id="cribRequest" name="cribRequest">
-                    </div>
-                    <div class="form-group">
-                        <label for="otherRequest">Other Requests</label>
-                        <textarea id="otherRequest" name="otherRequest" rows="4"
-                            placeholder="Enter any other special requests here..."></textarea>
-                    </div>
-                    <button type="submit">Submit Requests</button>
-                </form>
-
-                <h1>Your Arrival Time</h1>
-                <p>Please Select Your Estimated Arrival Time (Optional):</p>
-                <form id="arrival-time-form">
-                    <div class="form-group">
-                        <label for="arrivalTime">Arrival Time:</label>
-                        <select id="arrivalTime" name="arrivalTime">
-                            <option value="">Please Select</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="18:00">18:00</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:00">20:00</option>
-                            <option value="21:00">21:00</option>
-                            <option value="22:00">22:00</option>
-                            <option value="23:00">23:00</option>
-                        </select>
-                    </div>
-                    <p>24-Hour Front Desk Help Wherever You Need It!</p>
-                    <button type="submit">Submit</button>
-                </form>
-
-            </additional-services>
-            <card-information>
-                <h1>Bank Card Information</h1>
-                <form id="card-info-form">
-                    <div class="form-group">
-                        <label for="fullName">Full Name On The Card:</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cardNumber">Card Number:</label>
-                        <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX"
-                            maxlength="16" required onkeyup="validateCardNumber(this)">
-                    </div>
-                    <div class="form-group">
-                        <label for="expDate">EXP Date:</label>
-                        <input type="text" id="expDate" name="expDate" placeholder="MM/YY" maxlength="5" required
-                            onkeyup="validateExpDate(this)">
-                        <span id="expDateError" class="error-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="cvc">CVC:</label>
-                        <input type="text" id="cvc" name="cvc" placeholder="XXX" maxlength="3" required
-                            onkeyup="validateCVC(this)">
-                        <span id="cvcError" class="error-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="saveShortcut">
-                            <input type="checkbox" id="saveShortcut" name="saveShortcut">
-                            Save in Shortcut
+                        <label>
+                            <input type="checkbox" id="needFlight" name="needFlight">
+                            <strong>I will need a flight for my trip</strong>
+                            <p style="line-height: 21px;">20% Special Offer If You Book A Flight</p>
+                            <p>Flexible flight options from Stockholm to Turkiye from SLK 766/round trip. Fnnish booking
+                            </p>
+                            <p>this stay to get flight recommendations that match your selected dates.</p>
                         </label>
                     </div>
-                    <button type="submit" disabled>Payment</button>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="bookTaxi" name="bookTaxi">
+                            <strong> Want to book a taxi or shuttle ride in advance?</strong>
+                            <p>10% Special Offer If You Rent A Taxi</p>
+                            <p>Avoid surprises_ get from the airport to your accommodation without a hitch. </p>
+                            <p>we will add taxi options to your booking confirmation</p>
+                        </label>
+                    </div>
+                </div>
+                <br>
+
+
+
+                <strong>Special Requests</strong> <br>
+                <p>Special requests can not be guaranteed _ but the property will do its best to meet your needs. </p>
+                <p>you can always make a special request after your booking is complete!</p>
+                <br>
+                <input type="checkbox" id="needFlight" name="needFlight">
+                I would like rooms close to each Otherwise
+                <br> <br>
+
+
+
+                <strong>Your Arrival Time</strong><br>
+                <p>your rooms will be ready for check_in between 15:00 and 23:00</p> <br>
+                <p>24-huor front desk_Help wherever you need it!</p> <br>
+
+                <div class="estimate">
+                    <strong> add your estimated arrival time</strong>(optional) <br>
+                    <input type="number" value="please select" placeholder="please select">
+
+                </div>
+
+
+            </additional-services>
+            <br><br>
+            <card-information>
+                <strong>Bank Card Information</strong>
+                <form id="card-info-form">
+                    <div class="form-row">
+                        <div class="bank" style="display: flex;">
+                            <div class="form-row">
+                                <div class="form-group" style="display: flex; align-items: center;">
+                                    <label for="fullName" style="flex: 1;">Full Name On The Card:</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name"
+                                        style="flex: 2;" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group" style="display: flex; align-items: center;">
+                                    <label for="cardNumber" style="flex: 1;">Card Number:</label>
+                                    <input type="text" id="cardNumber" name="cardNumber"
+                                        placeholder="XXXX XXXX XXXX XXXX" style="flex: 2;" maxlength="16" required
+                                        onkeyup="validateCardNumber(this)">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group" style="display: flex; align-items: center;">
+                                    <label for="expDate" style="flex: 1;">EXP Date:</label>
+                                    <input type="text" id="expDate" name="expDate" placeholder="MM/YY" style="flex: 2;"
+                                        maxlength="5" required onkeyup="validateExpDate(this)">
+                                    <span id="expDateError" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group" style="display: flex; align-items: center;">
+                                    <label for="cvc" style="flex: 1;">CVC:</label>
+                                    <input type="text" id="cvc" name="cvc" placeholder="XXX" style="flex: 2;"
+                                        maxlength="3" required onkeyup="validateCVC(this)">
+                                    <span id="cvcError" class="error-message"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="saveShortcut">
+                                <input type="button" value="saveShortcut">
+                            </label>
+                            <button type="submit" style="margin-left: 500px;">Payment</button>
+                        </div>
+
                 </form>
                 <script>
                     function validateCardNumber(input) {

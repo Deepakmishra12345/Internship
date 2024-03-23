@@ -36,6 +36,20 @@
     height: auto;
 }
 
+.inform {
+    left: 200px;
+    size: 50px;
+}
+.checking{
+    display: flex;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .booking {
     width: 100%;
 }
