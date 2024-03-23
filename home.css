@@ -40,7 +40,8 @@
     left: 200px;
     size: 50px;
 }
-.checking{
+
+.checking {
     display: flex;
 }
 
@@ -147,10 +148,16 @@ form:valid button[type="submit"] {
     flex-wrap: wrap;
 }
 
+/* Media queries */
 @media screen and (max-width: 768px) {
     .inner2,
     .inner3,
     .inner4 {
         width: 100%;
+    }
+
+    .inner {
+        flex-direction: column;
+        gap: 10px;
     }
 }

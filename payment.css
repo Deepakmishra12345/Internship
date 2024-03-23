@@ -12,12 +12,12 @@ body {
     padding: 0 20px;
 }
 
-/* Main styles */
+
 main {
     padding: 20px;
 }
 
-/* Summary container styles */
+
 .summary-container {
     background-color: white;
     border-radius: 4px;
@@ -29,7 +29,7 @@ main {
     max-width: 100%;
 }
 
-/* Payment container styles */
+
 .payment-container {
     background-color: white;
     border-radius: 4px;
@@ -65,7 +65,7 @@ div-card-details,
         margin: 10px 0;
     }
 }
-/* Header styles */
+
 .header {
   
     color: #fff;
@@ -76,7 +76,7 @@ div-card-details,
 }
 
 .logo-container {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
 }
 
 .details-container {
@@ -86,21 +86,21 @@ div-card-details,
 }
 
 .user-profile {
-    display: none; /* Hide user profile by default */
+    display: none;
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 768px) {
     .header {
         padding: 10px;
     }
 
     .details-container {
-        display: none; /* Hide details container on small screens */
+        display: none; 
     }
 
     .user-profile {
-        display: flex; /* Display user profile on small screens */
+        display: flex; 
     }
 }
 
@@ -111,11 +111,11 @@ div-card-details,
     }
 
     .details-container {
-        display: none; /* Hide details container on small screens */
+        display: none; 
     }
 
     .user-profile {
-        display: flex; /* Display user profile on small screens */
+        display: flex; 
         flex-direction: column;
         align-items: center;
     }
@@ -131,7 +131,7 @@ div-card-details,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Add gap between footer columns */
+    gap: 20px;
 }
 
 .footer-column {
@@ -198,25 +198,25 @@ div-card-details,
     margin: 5px 0;
 }
 
-/* Responsive styles */
+
 @media only screen and (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Stack footer columns vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer-column {
-        flex-basis: 100%; /* Take full width */
-        margin: 0 0 20px; /* Adjust margin */
+        flex-basis: 100%; 
+        margin: 0 0 20px; 
     }
 
     .payment-links,
     .social-links,
     .email-subscription {
-        margin-bottom: 10px; /* Adjust margin */
+        margin-bottom: 10px; 
     }
 
     .email-subscription input {
-        width: 100%; /* Take full width */
+        width: 100%; 
     }
 }
